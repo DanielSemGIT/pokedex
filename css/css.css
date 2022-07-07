@@ -1,0 +1,131 @@
+:root{
+    --primario: #C2185B;
+    --rosa: #E91E63;
+    --gris: #949494;
+    --blanco: #FFFFFF;
+    --verde: #97D077;
+    --verdeOscuro: #67AB9F;
+    --morado: #966DAB;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+
+/* globales */
+.poquedex{
+    width: min(100%, 40rem);
+    margin: 0 auto;
+    border: .2rem solid var(--gris);
+    border-radius: .5rem;
+}
+.contenedor{
+    width: min(100%, 40rem);
+}
+
+/*navegador*/
+.navegador{
+    display: flex;
+    justify-content: center;
+}
+.navegador__input{
+    border: .2rem solid black;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    width: 95%;
+    padding: 1rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+/*descripcion*/
+
+.descripcion{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.imagen__pokemon{
+    width: 100%;
+    height: 100%;
+}
+
+.informacion{
+    padding: 2rem;
+}
+.informacion__nombre{
+    color: var(--primario);
+}
+.informacion__altura{
+    display: inline;
+}
+.informacion__peso{
+    display: inline;
+}
+.informacion__descripccion{
+    text-align: justify;
+}
+.informacion__tipos{
+    display: flex;
+    justify-content: space-evenly;
+}
+.div--grass{
+    background-color: var(--verde);
+    border-radius: .5rem;
+}
+.div--poison{
+    background-color: var(--morado);
+    border-radius: .5rem;
+}
+.div--bug{
+    background-color: var(--verdeOscuro);
+    border-radius: .5rem;
+}
+.div-texto{
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0rem;
+    padding: 0rem 2rem;
+}
+
+/*informacion general*/
+.informacion-general{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 1rem;
+}
+
+.informacion-General__texto{
+    background-color: var(--gris);
+    color: var(--blanco);
+    font-weight: 700;
+    padding: 1rem;
+    margin: 0rem;
+}
+.habilidad, .locacion{
+display: flex;
+align-items: center;
+}
+
+/*Estadisticas*/
+.estadisticas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 1rem;
+}
+.estadisticas__texto p{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.estadisticas__datos p{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
